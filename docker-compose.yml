@@ -1,0 +1,16 @@
+version: "3"
+services:
+  service1:
+    image: mikkelx/si:si-api
+    ports:
+      - "8081:8081"
+    networks:
+      - si-network
+    container_name: si-api-service
+  service2:
+    image: mikkelx/si:si-model
+    networks:
+      - si-network
+    container_name: si-model-service
+networks:
+  si-network:
