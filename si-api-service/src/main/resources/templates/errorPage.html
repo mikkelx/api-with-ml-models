@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Home - Fashion-Mnist</title>
+  <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
+  <link rel="stylesheet" th:href="@{/fonts/font-awesome.min.css}">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
+<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+  <div class="container"><a class="navbar-brand" th:href="@{/}">Fashion-Mnist</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item mx-0 mx-lg-1"></li>
+        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" th:href="@{/}">Main page</a></li>
+        <li class="nav-item mx-0 mx-lg-1"></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="text-center text-white bg-primary masthead">
+  <div class="container">
+    <br>
+    <h2 th:text="${errorMessage}"></h2>
+    <br>
+    <br>
+  </div>
+</header>
+<div class="text-center text-white copyright py-4"></div>
+<div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center d-block rounded text-white" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/freelancer.js}"></script>
+</body>
+
+</html>
